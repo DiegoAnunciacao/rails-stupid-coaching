@@ -1,0 +1,23 @@
+<div class="container shadow p-3 mb-5 bg-white rounded">
+  <h1>Your Coach's Answer</h1>
+  <div class="py-4">
+    <span>
+      <%= @question %> <br>
+    </span>
+    <p>
+      -You
+    </p>
+  </div>
+
+  <div id="coach-answer">
+    <span style="font-weight: 700;">
+      <%= @answer %> <br>
+    </span>
+    <p>
+      -Coach
+    </p>
+  </div>
+
+  <span><%= link_to 'Ask another question', ask_path %></span>
+
+</div>

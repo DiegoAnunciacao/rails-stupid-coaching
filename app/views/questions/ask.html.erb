@@ -1,0 +1,14 @@
+<div class="container shadow p-3 mb-5 bg-white rounded">
+  <div class="py-2">
+    <h1>Stupid Coaching</h1>
+  </div>
+    <span>Ask your coach anything:</span>
+    <div class="form-div py-1">
+      <form action="/answer" method="get" class="d-flex">
+        <input class="form-control" type="text" name="question" placeholder="Ask a question" required oninvalid="this.setCustomValidity('You must ask something')" oninput="this.setCustomValidity('')">
+        <div>
+          <button class="btn btn-primary" value="ask" type="submit">Ask</button>
+        </div>
+      </form>
+    </div>
+</div>
